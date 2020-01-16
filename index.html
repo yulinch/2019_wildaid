@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>聖誕作戰：拯救大白鯊HAFA行動｜偉門智威 x 野生救援</title>
+    <meta
+      name="description"
+      content="聖誕將近，新一代海洋大使HAFA卻被困在漁網裡面了，快動手救救牠！讓大白鯊HAFA也能自由地慶祝聖誕！"
+    />
+    <meta
+      property="og:url"
+      content="https://event.jwtdigital.com.tw/wildaid/index.html"
+    />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="聖誕作戰：拯救大白鯊HAFA行動｜偉門智威 x 野生救援"
+    />
+    <meta
+      property="og:description"
+      content="聖誕將近，新一代海洋大使HAFA卻被困在漁網裡面了，快動手救救牠！讓大白鯊HAFA也能自由地慶祝聖誕！"
+    />
+    <meta
+      property="og:image:alt"
+      content="聖誕將近，新一代海洋大使HAFA卻被困在漁網裡面了，快動手救救牠！讓大白鯊HAFA也能自由地慶祝聖誕！"
+    />
+    <meta
+      property="og:image"
+      content="https://event.jwtdigital.com.tw/wildaid/images/share.jpg"
+    />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald:500|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        setTimeout(function() {
+          $(".loading").fadeOut(150);
+        }, 300);
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="loading">
+        <div class="loading-animate">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="guide">
+        <div class="guide-desc">
+          <div class="icon-close">
+            <span></span>
+          </div>
+          <img src="./images/guide.png" alt="" />
+        </div>
+        <div class="guide-finger">
+          <div>
+            遊戲方法：點選漁網並維持同方向轉動，看你能在多少時間內拯救出Hafa！
+          </div>
+          <img src="./images/finger.gif" alt="" />
+          <button class="btn-start">開始遊戲</button>
+        </div>
+      </div>
+      <div class="scene">
+        <div class="percentage">
+          <div class="bar">
+            <span></span>
+          </div>
+          <div class="scale"></div>
+          <div class="sprinkle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="hafa">
+          <img src="./images/hafa.png" alt="" />
+        </div>
+        <div class="net">
+          <img src="./images/net.png" id="net" alt="" />
+        </div>
+        <div class="main-video">
+          <div class="youtube-container">
+            <div id="player"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lightbox">
+        <div class="mask"></div>
+        <div class="lightbox-container">
+          <div class="desc is-succeed">
+            <div>感謝您花：</div>
+            <div class="time">
+              <span id="seconds">00</span>.<span id="tens">00</span>
+            </div>
+            <div>秒拯救了Hafa！</div>
+            <p>
+              獲得一份海洋大使Hafa送上的祝福，<br />
+              快打開來看看吧！
+            </p>
+          </div>
+          <a href="javascript:;" class="btn-gift">
+            <img src="./images/btn-gift.png" alt="" />
+          </a>
+          <div class="desc is-failed">
+            <p>
+              喔喔！<br />
+              速度不夠快，Hafa掙脫失敗...
+            </p>
+            <div>別放棄，我們再試一次吧！</div>
+            <button class="restart" id="restart">
+              <span>PLAY<br />AGAIN</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="celebrate">
+        <div class="bg">
+          <img src="./images/celebrate.jpg" alt="" />
+        </div>
+        <div class="btn-click">
+          <a href="https://www.instagram.com/hafa.in.the.sea" target="_blank"
+            ><img src="./images/btn-click.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/utils/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

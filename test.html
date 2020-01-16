@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>WildAid</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald:500|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+      console.log("loading");
+      $(document).ready(function() {
+        //     // Animate loader off screen
+        setTimeout(function() {
+          // $("body").fadeIn(150);
+          $(".loading").fadeOut(150);
+          console.log("load end");
+        }, 800);
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="loading">
+        <div class="loading-animate">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="guide">
+        <div class="guide-desc">
+          <div class="icon-close">
+            <span></span>
+          </div>
+          <img src="./images/guide.png" alt="" />
+        </div>
+        <div class="guide-finger">
+          <div>
+            遊戲方法：點選漁網並維持同方向轉動，看你能在多少時間內拯救出Hafa！
+          </div>
+          <img src="./images/finger.gif" alt="" />
+          <button class="btn-start">開始遊戲</button>
+        </div>
+      </div>
+      <div class="scene">
+        <div class="percentage">
+          <!-- <div class="icon"></div> -->
+          <div class="bar">
+            <span></span>
+          </div>
+          <div class="sprinkle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="hafa">
+          <img src="./images/hafa.png" alt="" />
+        </div>
+        <div class="net">
+          <img src="./images/net.png" id="net" alt="" />
+        </div>
+      </div>
+
+      <div class="lightbox">
+        <div class="mask"></div>
+        <div class="lightbox-container">
+          <div class="icon-close">
+            <span></span>
+          </div>
+          <div class="desc is-succeed">
+            <div>感謝您花：</div>
+            <div class="time">
+              <span id="seconds">00</span>.<span id="tens">00</span>
+            </div>
+            <div>秒拯救了Hafa！</div>
+            <p>
+              獲得一份海洋大使Hafa送上的祝福，<br />
+              快打開來看看吧！
+            </p>
+          </div>
+          <div class="desc is-failed">
+            <p>
+              喔喔！<br />
+              速度不夠快，Hafa掙脫失敗...
+            </p>
+            <div>別放棄，我們再試一次吧！</div>
+            <button class="restart" id="restart">
+              <span>PLAY<br />AGAIN</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/utils/Draggable.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
